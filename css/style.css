@@ -1,0 +1,1780 @@
+/* HTML5 display-role reset for older browsers */
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+
+header {
+    overflow: auto;
+}
+
+#navpc {
+    display: none;
+}
+
+#logo {
+    max-width: 40%;
+    width: 20%;
+    float: left;
+    padding: 5%;
+}
+
+#logo>img {
+    width: 100%;
+    height: 100%;
+    float: right;
+}
+
+
+/* navigation
+____________________________________________________________________________*/
+
+#navmobil {
+    display: inline-block;
+    color: #3c312e;
+}
+
+#navpc {
+    display: none;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: montserrat, sans-serif;
+}
+
+ul>li {
+    color: #3c312e;
+    text-decoration: none;
+}
+
+ul>a {
+    text-decoration: none;
+    color: #3c312e;
+    font-family: montserrat, sans-serif;
+}
+
+
+/* burgermenu
+____________________________________________________________________________*/
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: #f3f1ee;
+    font-family: montserrat, sans-serif;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#menuclose {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 13px;
+    right: 27px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuopen {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: grey;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuopen:focus~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff;
+}
+
+#menuopen:focus~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuopen:focus~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: -30px;
+    top: -30px;
+    margin: 0;
+    padding: 0;
+    background: #7c3b1e;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#menu>li>a {
+    color: #ffff;
+    text-decoration: none;
+    font-family: montserrat, sans-serif;
+}
+
+#menuopen:focus~ul {
+    transform: none;
+}
+ 
+
+
+/* mød os kode navigation og burgermenu
+----------------------------------------------------------------------------*/
+
+
+/* mød os desktop menu ---- */
+
+#navpc {
+    display: none;
+}
+
+#navmobil1 {
+    display: inline-block;
+    color: #3c312e;
+    
+}
+
+#navpc1 {
+    display: none;
+    font-size: 1.3em;
+    text-decoration: none;
+    font-family: montserrat, sans-serif;
+}
+
+#navpc1 ul li {
+    color: #3c312e;
+    text-decoration: none;
+}
+
+#navpc1 ul a {
+    text-decoration: none;
+    color: #3c312e;
+    font-family: "montserrat";
+}
+
+
+/* mød os burgermenu ------ */
+
+#menuclose1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 13px;
+    right: 27px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuToggle1 {
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuopen1 {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle1 span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background-color: #f3f1ee;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle1 span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle1 span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuopen1:focus~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff;
+}
+
+#menuopen1:focus~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuopen1:focus~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    right: -30px;
+    top: -30px;
+    margin: 0;
+    padding: 0;
+    background: #7c3b1e;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu1 li {
+    padding: 10px 0;
+    font-size: 22px;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#menu1 li a {
+    color: #ffff;
+    text-decoration: none;
+    font-family: "montserrat";
+}
+
+#menuopen1:focus~ul {
+    transform: none;
+}
+
+/* mød os 
+-----------------------------------------------------------------------------*/
+
+#ejerne {
+    background-color: #7c3b1e;
+    padding-bottom: 10%;
+}
+
+.voreshistorietekst {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.voreshistorietekst h1 {
+    font-size: 20px;
+    font-family: "ivy journal";
+    font-weight: bold;
+    color: #7c3b1e;
+    margin-bottom: 5%;
+}
+
+.voreshistorietekst p {
+    font-family: "montserrat";
+    font-size: 1.2em;
+    line-height: 25px;
+}
+
+.arbejdsbord {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+#voreshistorie {
+    margin: 5%;
+}
+
+#arbejdsproces {
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+#carstenogpeter img {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    padding: 2.5%;
+}
+
+#carstenogpeter {
+    margin-top: 30%;
+}
+
+
+/* vi tilbyder side (Janne)
+-----------------------------------------------------------------------------*/
+
+/*Gif baggrund*/
+
+#gif {
+ width: 100%;
+  height: 400px;
+  background: url('../image/mobilcinemagraphic.gif');
+  background-size: 100% 100%;}
+
+.overskriftvitilbyder {
+    font-family: "ivyJournal";
+    color: #ffffff;
+    font-size: 3em;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 600;
+    margin: 5%;
+}
+
+
+.tekstvitilbyder {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1em;
+    font-family: "montserrat";
+    font-weight: 70;
+    text-align: center;
+    position: relative;
+}
+
+.flex-materialer {
+    background-color: #f3f1ee;
+}
+
+#skuffe {
+    margin-bottom: 8em;
+    max-width: 80%;
+    padding-top: 10%;
+}
+
+#personligside {
+    background-color: #ffffff;
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+#personligside p {
+    margin-top: 0%;
+    padding-top: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: left;
+    padding-bottom: 10%;
+}
+
+#materialer {
+    margin-bottom: 4%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    font-family: "IvyJournal";
+    font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+}
+
+#personligside h2 {
+    padding-top: 20%;
+}
+
+.flex-materialer h3 {
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+.flex-materialer {
+    padding: 5%;
+}
+
+
+
+.flex-tre {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background: repeating-linear-gradient(#f3f1ee, #f3f1ee 49.9%, #ffffff 50.1%, #ffffff 100%);
+    padding-bottom: 0%;
+
+}
+
+.flex-tre div {
+    width: 20%;
+}
+
+.flex-tre h3 {
+    text-align: center;
+    font-family: "IvyJournal";
+    position: relative;
+}
+
+.flex-tre img {
+    max-width: 6em;
+}
+
+
+.tilbyderknap {
+    margin-top: 5%;
+    background-color: #7c3b1e;
+    border: none;
+    color: white;
+    padding: 1%;
+    width: 30%;
+    font-family: "montserrat";
+    display: block;
+    margin: auto;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+.tilbyderknap>a:visited {
+    color: white;
+}
+
+#infographic {
+   width: 100%; 
+   margin: 0 auto;
+   text-align: center;
+}
+
+#flexfooter {
+    background: #f3f1ee;
+}
+
+/* billeder
+____________________________________________________________________________*/
+
+.forsideillustration {
+    display: block;
+    margin: auto;
+    padding-top: 4%;
+    max-width: 84%;
+}
+
+#haandvaerk {
+    background-color: #7c3b1e;
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    padding-bottom: 5%;
+}
+
+#haandvaerk>img {
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+    width: 70%;
+}
+
+
+/* tekst
+____________________________________________________________________________*/
+
+.overskriften {
+    font-family: ivyjournal, sans-serif;
+    color: #7c3b1e;
+    font-size: 1.7em;
+    text-align: center;
+    margin: 7%;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+#forside>h3 {
+    color: #3c312a;
+    font-size: 1.2em;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.haandvaerktekst>h2 {
+    font-family: ivyjournal, sans-serif;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 5%;
+    font-weight: bold;
+}
+
+.haandvaerktekst>h3 {
+    color: #fff;
+    font-size: 1.2em;
+    font-family: montserrat, sans-serif;
+    text-align: center;
+    margin: 4%;
+    padding-bottom: 4%;
+}
+
+
+/* brødtekst
+____________________________________________________________________________*/
+
+p {
+    text-decoration: none;
+}
+
+
+/* knap
+-----------------------------------------------------------------------------*/
+
+a {
+    text-decoration: none;
+}
+
+.opretknap {
+    background-color: #7c3b1e;
+    border: none;
+    color: white;
+    padding: 1%;
+    width: 30%;
+    font-family: montserrat, sans-serif;
+    display: block;
+    margin: auto;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.opretknap>a:visited {
+    color: white;
+}
+
+.knaptilbyder>a:visited {
+    color: #3c312a;
+}
+
+.knaptilbyder {
+    border: none;
+    margin-top: 18%;
+    background-color: #ceb28a;
+    color: #3c312a;
+    padding: 1%;
+    width: 30%;
+    margin-left: 4%;
+    font-size: 0.8em;
+    font-family: montserrat, sans-serif;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/* video
+-----------------------------------------------------------------------------*/
+
+
+/* login
+------------------------------------------------------------------------------*/
+
+.login-page {
+    width: 360px;
+    padding: 0.5%;
+    margin: 0 auto;
+}
+
+.form {
+    z-index: 1;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.form input {
+    font-family: "montserrat";
+    outline: 1;
+    background: #f3f1ee;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.form button {
+    font-family: "montserrat";
+    text-transform: uppercase;
+    outline: 0;
+    background: #7c3b1e;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #f3f1ee;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+    background-color: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #ceb28a;
+    font-size: 14px;
+}
+
+.form .message a {
+    color: #3c312a; 
+    text-decoration: none;
+}
+
+.form .register-form {
+    display: none;
+}
+
+
+/* Køkkenunivers
+----------------------------------------------------------------------------*/
+
+#koekkenunivers h2 {
+    margin: 0 auto;
+    padding: 0% 0% 1.5% 0%;
+    text-align: center;
+    color: #3c312a;
+    font-family: "ivy journal";
+    font-size: 20px;
+}
+
+#koekkenunivers p {
+    margin: 0 auto;
+    padding: 0 6.5% 0 6.5%;
+    line-height: 30px;
+    color: #3c312a;
+    font-family: "montserrat";
+    font-size: 15px;
+}
+
+#spalte {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#inspirationsbillede1 {
+    margin: 2.5%;
+}
+
+#inspiration1 h3 {
+    font-family: "ivy journal";
+    font-size: 15px;
+    text-align: left;
+    margin: 5% 6.5% 0.5% 6.5%;
+}
+
+
+/* se mere knap og album knap
+------------------------------------------------------------------------*/
+
+#semereknap1 button {
+    background-color: #7c3b1e;
+    padding: 1.5% 8% 1.5% 8%;
+    border: none;
+    color: #f3f1ee;
+    font-family: "montserrat";
+    margin: 0.5% 6.5% 0.5% 6.5%;
+}
+
+#semereknap1 {
+    margin-bottom: 15%;
+}
+
+
+#semereknap2 button {
+    background-color: #7c3b1e;
+    padding: 1.5% 8% 1.5% 8%;
+    border: none;
+    color: #f3f1ee;
+    font-family: "montserrat";
+    margin: 0.5% 6.5% 0.5% 6.5%;
+}
+
+#semereknap2 {
+    margin-bottom: 10%;
+}
+
+#tilbudknap button {
+    background-color: #7c3b1e;
+    padding: 1.5% 8% 1.5% 8%;
+    border: none;
+    color: #f3f1ee;
+    font-family: "montserrat";
+    margin-top: 5%;
+}
+
+#tilbudknap {
+    text-align: center;
+}
+
+#tidslinje img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+}
+
+/* Messenger -----------------------------------------*/
+* {box-sizing: border-box;}
+
+/* Knap til at åbne messenger - sat til at komme fra bunden */
+.open-button {
+  background-color: #7c3b1e;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* Popup chatten - skjult på default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Styling af form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Fulde vidde på tektområde */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* Når teksten fokuserer, gør noget */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Farve SEND knap */
+.form-container .btn {
+  background-color: #7c3b1e;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Baggrundsfarve LUK knap */
+.form-container .cancel {
+  background-color: #3c312a;
+}
+
+/* Tilføjet hover effekt */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+
+footer {
+    margin-bottom: 5%;
+    color: #3c312a;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.ikoner {
+    max-width: 9%;
+    width: 9%;
+    margin-top: 8%;
+    margin-left: 2%;
+    justify-content: center;
+    display: inline-block;
+}
+
+#showroom {
+    width: 35%;
+    margin: auto;
+}
+
+#kontakt>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+
+#showroom>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+
+#socialemedier>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+
+/* media
+-----------------------------------------------------------------------------*/
+
+
+@media only screen and (min-width: 550px) {
+
+    #gif {
+        background: url('../image/tabletcinemagraphic.gif');
+        width: 100%;
+        height: auto;
+       }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* knap
+-----------------------------------------------------------------------------*/
+    a {
+        text-decoration: none;
+    }
+
+    .opretknap {
+        margin-top: 30%;
+        background-color: #7c3b1e;
+        border: none;
+        color: white;
+        padding: 1%;
+        width: 30%;
+        font-family: montserrat, sans-serif;
+        display: block;
+        margin: auto;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .opretknap>a:visited {
+        color: white;
+    }
+
+    .knaptilbyder>a:visited {
+        color: #3c312a;
+    }
+
+    .knaptilbyder {
+        border: none;
+        margin-top: 18%;
+        background-color: #ceb28a;
+        color: #3c312a;
+        padding: 1%;
+        width: 30%;
+        margin-left: 4%;
+        font-size: 1em;
+        font-family: montserrat, sans-serif;
+        display: block;
+        margin: auto;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* mød os
+---------------------------------------------------------------------------*/
+    .voreshistorietekst h1 {
+        font-size: 40px;
+    }
+
+    .voreshistorietekst p {
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    #carstenogpeter {
+        margin-top: 0%;
+    }
+
+
+    /* mød os kode navigation og burgermenu
+----------------------------------------------------------------------------*/
+    /* tekst
+-----------------------------------------------------------------------------*/
+    .overskriften {
+        font-family: ivyjournal, sans-serif;
+        color: #7c3b1e;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 7%;
+        font-weight: bold;
+        line-height: 1.2;
+        display: block;
+    }
+
+    #forside>h3 {
+        color: #3c312a;
+        font-size: 1.6em;
+        font-family: montserrat, sans-serif;
+        text-align: center;
+        margin-bottom: 5%;
+        line-height: 1.2;
+        display: block;
+    }
+
+    .haandvaerktekst>h2 {
+        font-family: ivyjournal, sans-serif;
+        color: #fff;
+        font-size: 2.5em;
+        text-align: center;
+        margin: 5%;
+        font-weight: bold;
+        display: block;
+    }
+
+    .haandvaerktekst>h3 {
+        color: #fff;
+        font-size: 1.6em;
+        font-family: montserrat, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin: 4%;
+        padding-bottom: 4%;
+        line-height: 1.2;
+        width: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    /* køkkenunivers
+    --------------------------------------------------------------------------*/
+    #spalte {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 2%;
+        margin-top: 0%;
+    }
+
+    #inspiration1 h3 {
+        margin-left: 6.5%;
+        margin-bottom: 0%;
+        text-align: left;
+        font-size: 13px;
+    }
+    #koekkenunivers p {
+        margin: 0 auto;
+        margin-bottom: 5%;
+        padding: 0 6.5% 0 6.5%;
+    }
+
+    /*vi tilbyder side tablet---------------------------------------------------------------*/
+
+    #gif {
+        background: url('../image/tabletcinemagraphic1.gif');
+        width: 100%;
+        height: auto;
+       }
+
+    .overskriftvitilbyder {
+        font-size: 5em;
+    }
+
+    .tekstvitilbyder {
+        padding-bottom: 14em;
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    #materialer {
+        font-size: 3em;
+    }
+
+    #skuffe img {
+        max-width: 70%;
+        text-align: center;
+        padding-top: 10%;
+    }
+
+    .flex-tre div {
+        width: 25%;
+    }
+
+    .flex-tre h3 {
+        font-size: 2em;
+    }
+
+    .flex-tre img {
+        max-width: 10em;
+    }
+
+
+    .tilbyderknap {
+        margin-top: 5%;
+        background-color: #7c3b1e;
+        border: none;
+        color: white;
+        padding: 1%;
+        width: 30%;
+        font-family: "montserrat";
+        display: block;
+        margin: auto;
+        font-size: 0.5em;
+        text-align: center;
+    }
+
+    .tilbyderknap>a:visited {
+        color: white;
+    }
+
+    #infographic {
+        display: block; 
+        margin: auto;
+        max-width: 80%;
+    
+    }
+
+    /* se mere knap og album knap
+    ------------------------------------------------------------------------*/
+    #semereknap1 button {
+        font-size: 15px;
+    }
+
+    #semereknap2 button {
+        font-size: 15px;
+    }
+
+    #tilbudknap button {
+        font-size: 15px;
+    }
+
+    #tidslinje img {
+        padding-top: 10%; text-align: center;
+    }
+
+
+
+    /* footer
+-----------------------------------------------------------------------------*/
+#flexfooter {
+    overflow: auto;
+}
+footer {
+    margin-bottom: 5%;
+    color: #3c312a;
+    font-family: montserrat, sans-serif;
+    margin-top: 5%;
+}
+.ikoner {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    max-width: 7%;
+    margin-top: 4%;
+    justify-content: left;
+    margin-left: 0%;
+    padding: 1%;
+}
+a {
+    text-decoration: none;
+}
+#kontakt {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 7%;
+}
+#showroom {
+    float: right;
+    width: 40%;
+    text-align: left;
+    margin-top: 7%;
+}
+#socialemedier {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+#kontakt>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
+#showroom>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
+#socialemedier>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.8em;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+
+    /* header
+-----------------------------------------------------------------------------*/
+    header {
+        display: block;
+        margin-bottom: 4%;
+    }
+
+    /* logo
+-----------------------------------------------------------------------------*/
+    #logo {
+        max-width: 20%;
+        width: 10%;
+        float: left;
+        padding: 5%;
+        margin: auto;
+    }
+
+    #logo>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* navigation
+-----------------------------------------------------------------------------*/
+    #navmobil {
+        display: none;
+    }
+
+    #navpc {
+        margin: auto;
+        float: right;
+        display: flex;
+        padding: 5%;
+    }
+
+    #navpc>ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+    }
+
+    #navpc>ul>li {
+        margin-bottom: 3%;
+        list-style-type: none;
+        margin-left: 27px;
+    }
+
+    #navpc>ul>li>a {
+        text-decoration: none;
+        color: #3c312a;
+        font-size: 1em;
+        font-family: montserrat, sans-serif;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+        letter-spacing: 0.15em;
+    }
+
+    #navpc>ul>li>a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #7c3b1e;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    #navpc>ul>li>a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    #navpc>ul>li>a:hover {
+        color: #7c3b1e
+    }
+
+    /* mød os kode navigation og burgermenu
+    ------------------------------------------------------------------------*/
+
+    /* mød os desktop menu ---- */
+    #navmobil1 {
+        display: none;
+    }
+
+    #navpc1 {
+        margin: auto;
+        float: right;
+        display: flex;
+        padding: 5%;
+    }
+
+    #navpc1 ul {
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+    }
+
+    #navpc1 ul li {
+        margin-bottom: 3%;
+        list-style-type: none;
+        margin-left: 27px;
+    }
+
+    #navpc1 ul li a {
+        text-decoration: none;
+        color: #f3f1ee;
+        font-size: 1em;
+        font-family: Montserrat;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+        letter-spacing: 0.15em;
+    }
+
+    #navpc1 ul li a:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #3c312a;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    #navpc1 ul li a:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    #navpc1 ul li a:hover {
+        color: #3c312a;
+    }
+
+    /* mød os burgermenu ------ */
+
+    /* mød os
+    ---------------------------------------------------------------------------*/
+    #carstenogpeter img {
+        width: 45%;
+    }
+
+    /* Tekst
+    -----------------------------------------------------------------------------*/
+    .overskriften {
+        font-family: ivyjournal, sans-serif;
+        color: #7c3b1e;
+        font-size: 4em;
+        width: 80%;
+        max-width: 50%;
+        margin-left: 5%;
+        text-align: left;
+        line-height: 1.2;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    #forside {
+        position: absolute;
+    }
+
+    #forsideto {
+        display: inline-block;
+        margin: auto;
+    }
+
+    #forside>h3 {
+        color: #3c312a;
+        font-size: 1.4em;
+        font-family: montserrat, sans-serif;
+        font-weight: bold;
+        margin-left: 5%;
+        text-align: left;
+        line-height: 1.5;
+        display: block;
+        margin-bottom: 2%;
+    }
+
+    .wrap {
+        width: 100%;
+        position: relative;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .haandvaerktekst {
+        width: 40%;
+    }
+
+    .haandvaerktekst>h2 {
+        font-family: ivyjournal, sans-serif;
+        color: #fff;
+        font-size: 2.7em;
+        padding-top: 25%;
+        text-align: left;
+        margin: 0%;
+        font-weight: bold;
+        width: 50%;
+        line-height: 1.5;
+    }
+
+    .haandvaerktekst>h3 {
+        font-family: montserrat, sans-serif;
+        color: #fff;
+        font-size: 1.3em;
+        width: 60%;
+        text-align: left;
+        margin: 0%;
+        padding-top: 2%;
+        line-height: 1.5;
+        font-weight: normal;
+    }
+
+    /* fotos
+-----------------------------------------------------------------------------*/
+    .forsideillustration {
+        max-width: 80%;
+        width: 80%;
+        float: right;
+        margin-right: 5%;
+        margin-top: 17%;
+    }
+
+    #haandvaerk {
+        background-color: #7c3b1e;
+        margin-top: 15%;
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    #haandvaerk>img {
+        max-width: 50%;
+        width: 50%;
+        margin: 6%;
+    }
+
+    /* button
+-----------------------------------------------------------------------------*/
+    .button {
+        font-family: montserrat, sans-serif;
+        text-align: center;
+        color: #f3f1ee;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #7c3b1e;
+        padding: 20px;
+        border: none;
+        transition: 0.4s ease;
+        transition-property: background, letter-spacing, box-shadow;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background: #3c312a;
+        color: #f3f1ee;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .opretknap {
+        background-color: #7c3b1e;
+        border: none;
+        color: white;
+        cursor: pointer;
+        padding: 1%;
+        width: 15%;
+        margin-left: 8%;
+        font-size: 1em;
+        display: block;
+    }
+
+    .opretknap a:hover {
+        background: #ceb28a;
+    }
+
+    .opretknap>a:visited {
+        color: white;
+    }
+
+    .knaptilbyder>a:visited {
+        color: #3c312a;
+    }
+
+    .knaptilbyder {
+        position: absolute;
+        background: #ceb28a;
+        color: #3c312a;
+        padding: 1%;
+        width: 15%;
+        margin-left: 1%;
+        font-size: 1em;
+    }
+
+    .knaptilbyder a:hover {
+        background: #7c3b1e;
+    }
+
+    /* køkkenunivers
+    -----------------------------------------------------------------------*/
+    #koekkenunivers h2 {
+        padding: 0.5%;
+        font-size: 45px;
+    }
+
+    #inspiration1 h3 {
+        margin: 0 auto;
+        margin-left: 3%;
+        font-size: 18px;
+    }
+
+    #spalte {
+        display: flex;
+        margin: 0 auto;
+        padding: 1.5%;
+        padding-bottom: 0%;
+        flex-wrap: inherit;
+    }
+
+    #inspirationsbillede1 {
+        margin: 1%;
+    }
+    #koekkenunivers p {
+        margin: 0 auto;
+        margin-bottom: 5%;
+        padding: 0.5% 15% 0 15%;
+        font-size: 20px;
+    }
+
+    /*vi tilbyder side desktop---------------------------------------------------------------*/
+    
+
+    #gif {
+        width: 100%;
+         height: auto;
+         background: url('../image/desktopcinemagraphicstor.gif');
+        }
+
+    .overskriftvitilbyder {
+        font-family: "ivyJournal";
+        color: #ffffff;
+        font-size: 6em;
+        text-align: right;
+        margin: 7%;
+        line-height: 1em;
+        font-weight: 600;
+        margin-top: 0em;
+        margin-bottom: 0%;
+    }
+
+
+    .tekstvitilbyder {
+        text-align: right;
+        padding-right: 7%;
+        position: relative;
+        
+    }
+
+    #materialer {
+        font-size: 3em;
+        color: #3c312a;
+        font-family: "ivyJournal";
+        font-weight: 600;
+        text-align: left;
+        padding-left: 5%;
+    }
+
+.flex-materialer section {
+    width: 48%;
+}
+
+    .flex-materialer {
+        display: flex;
+        width: 100%;
+        padding-top: 5%;
+    }
+
+    .flex-materialer section {
+        width: 48%;
+    }
+
+    .flex-materialer p {
+        margin-left: 5%;  
+        line-height: 2em; 
+        font-size: 1.2em;
+    }
+
+    .flex-materialer h3 {
+        padding-left: 5%;
+        font-weight: 600;
+    }
+
+    
+    #skuffe img {
+        max-width: 100%; 
+        text-align: center;
+        padding-top: 10%;
+    }
+    
+   
+    
+
+    #personligside {
+        padding: 0%;
+        margin: 0%;
+        
+    }
+    
+    #personligside p {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        text-align: left;
+        padding-bottom: 5%;
+        font-size: 1.2em;
+
+    }
+
+    #personligside h2 {
+        padding-top: 15%;
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+
+    .tilbyderknap {
+        position: relative;
+        margin-top: 5%;
+        background-color: #7c3b1e;
+        border: none;
+        color: white;
+        cursor: pointer;
+        width: 10%;
+        margin-left: 5%;
+        padding-left: 0%;
+        font-size: 1em;
+     text-align: left;
+    }
+
+    .tilbyderknap a:hover {
+        background: #ceb28a;
+    }
+
+    .tilbyderknap>a:visited {
+        color: white;
+    }
+
+    #infographic {
+        display: block; 
+        text-align: center; 
+        max-width: 70%; 
+        margin: auto;}
+
+/* se mere knap og album knap
+------------------------------------------------------------------------*/
+    
+#semereknap1 button {
+    padding: 0.5% 5% 0.5% 5%;
+    font-size: 13px;
+    margin-left: 2.5%;
+}
+
+.semereknap1 :hover {
+    background: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+#semereknap2 button {
+    padding: 0.5% 5% 0.5% 5%;
+    font-size: 13px;
+    margin-left: 2.5%;
+}
+
+.semereknap2 :hover {
+    background: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+
+#tilbudknap button {
+    padding: 0.5% 5% 0.5% 5%;
+    font-size: 13px;
+    margin-left: 2.5%;
+}
+
+.tilbudknap1 :hover {
+    background: #3c312a;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+}
+    
+#tidslinje img {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Login
+------------------------------------------------------------------------*/
+.form {
+    position: relative;
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#flexfooter {
+    display: flex;
+}
+#flexfooter>section {
+    margin: 5%;
+}
+.luft {
+    flex: 1;
+}
+footer {
+    margin-bottom: 5%;
+    color: #3c312a;
+    font-size: 1em;
+    text-align: left;
+}
+.ikoner {
+    max-width: 15%;
+    margin-top: 15%;
+    margin-left: 2%;
+    justify-content: center;
+    width: 15%;
+}
+#socialemedier {
+    width: 30%;
+}
+#showroom {
+    width: 35%;
+    margin: 0;
+}
+#kontakt>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+#showroom>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+#socialemedier>h4 {
+    font-weight: bold;
+    line-height: 3;
+    font-size: 1.3em;
+}
+#kontakt>p {
+    font-size: 1.3em;
+}
+#socialemedier>p {
+    font-size: 1.3em;
+}
+#showroom>p {
+    font-size: 1.3em;
+}
+
+}
