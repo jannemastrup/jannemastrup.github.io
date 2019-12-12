@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lei1wuh.css">
+    <style>
+        @import url("https://use.typekit.net/lei1wuh.css");
+    </style>
+    <link rel="stylesheet" href="https://use.typekit.net/lei1wuh.css">
+
+    <link rel="icon" type="image/x-icon" href="image/faveicon.png">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a id="logo" href="index.html">
+                <img src="image/minologo.png" alt="Mino Design logo">
+            </a>
+
+            <nav role="navigation" id="navmobil">
+                <div id="menuToggle">
+
+
+
+                    <a id="menuopen" tabindex="1"></a>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+
+
+                    <ul id="menu">
+                        <li>
+                            <a id="menuclose"></a>
+                        </li>
+
+                        <li> <a href="vitilbyder.html">VI TILBYDER</a></li>
+                        <li><a href="moedos.html">MØD OS</a></li>
+                        <li><a href="index.html#kontakt">KONTAKT</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <nav id="navpc">
+                <ul>
+                    <li> <a href="vitilbyder.html">VI TILBYDER</a></li>
+                    <li><a href="moedos.html">MØD OS</a></li>
+                    <li><a href="index.html#kontakt">KONTAKT</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+
+        <section class="login-page">
+
+
+            <div class="form">
+                <form class="login-form">
+                    <input type="text" placeholder="Brugernavn" />
+                    <input type="adgangskode" placeholder="Adgangskode" />
+                    <button onclick="window.location='køkkenunivers.html';">Login</button>
+                    <p class="message">Ikke registeret? <a href="#">Register</a></p>
+                </form>
+
+                <form class="register-form">
+                    <input type="text" placeholder="Brugernavn" />
+                    <input type="text" placeholder="Adgangskode" />
+                    <input type="text" placeholder="Email" />
+                    <button onclick="window.location='køkkenunivers.html';">Opret</button>
+                    <p class="message">Allerede bruger? <a href="#">Login</a></p>
+                </form>
+
+
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+            <script>
+                $('.message a').click(function() {
+                    $('form').animate({
+                        height: "toggle",
+                        opacity: "toggle"
+                    }, "slow");
+                });
+            </script>
+
+
+        </section>
+
+</body>
+
+</html>

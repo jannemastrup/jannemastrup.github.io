@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mino Design</title>
+    <meta name="keywords" content="unikke løsninger,snedker køkkener, bæredygtig køkkerner, skræddersyet løsniger">
+    <meta name="description" content="Mino Design laver unikke og bæredygtige køkkener">
+    <meta name="author" content="Janne, Michala, Cathrine, Cecillie">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+
+
+    <link rel="icon" type="image/x-icon" href="image/logofaveicon.png">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <a id="logo" href="index.html">
+                <img src="image/minologo.png" alt="Mino Design logo">
+            </a>
+
+            <nav role="navigation" id="navmobil">
+                <div id="menuToggle">
+
+
+
+                    <a id="menuopen" tabindex="1"></a>
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+
+
+                    <ul id="menu">
+                        <li>
+                            <a id="menuclose"></a>
+                        </li>
+
+                        <li> <a href="vitilbyder.html">VI TILBYDER</a></li>
+                        <li><a href="moedos.html">MØD OS</a></li>
+                        <li><a href="index.html#kontakt">KONTAKT</a></li>
+                        <li><a href="login.html">LOGIN</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <nav id="navpc">
+                <ul>
+                    <li> <a href="vitilbyder.html">VI TILBYDER</a></li>
+                    <li><a href="moedos.html">MØD OS</a></li>
+                    <li><a href="index.html#kontakt">KONTAKT</a></li>
+                    <li><a href="login.html">LOG IN</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+
+        <section id="koekkenunivers">
+
+            <h2>DIT KØKKENUNIVERS</h2>
+            <p>Velkommen til din personlige inspirationsside. Her kan du du oploade din inspiration til dine personlige opslagstavler, chatte med os og få indblik i produktionen af dit snedkerkøkken.</p>
+
+        </section>
+
+        <section id="inspiration1">
+
+            <h3>FARVE OG MATERIALER</h3>
+
+        </section>
+
+        <section id=box1>
+
+            <div id="spalte">
+                <div id="inspirationsbillede1"><img src="image/upload.png" alt="Upload billede knap"></div>
+                <div id="inspirationsbillede1"><img src="image/koekken1.png" alt="Blåt køkken"></div>
+                <div id="inspirationsbillede1"><img src="image/koekken4.png" alt="Materiale billede af messing"></div>
+                <div id="inspirationsbillede1"><img src="image/koekken5.png" alt="Materiale billede af bordplader"></div>
+            </div>
+
+        </section>
+
+        <div id="semereknap1">
+            <button class="button semereknap1">SE MERE</button>
+        </div>
+
+        <section id="inspiration1">
+
+            <h3>INSPIRATION</h3>
+
+        </section>
+
+        <section id="box2">
+            <div id="spalte">
+                <div id="inspirationsbillede1"><img src="image/upload.png" alt="Upload billede knap"></div>
+                <div id="inspirationsbillede1"><img src="image/koekken2.png" alt="Upload billede knap"></div>
+                <div id="inspirationsbillede1"><img src="image/koekken3.png" alt="Upload billede knap"></div>
+                <div id="inspirationsbillede1"><img src="image/koekken6.png" alt="Upload billede knap"></div>
+            </div>
+
+        </section>
+
+        <div id="semereknap2">
+            <button class="button semereknap2">SE MERE</button>
+            <button class="button semeresknap2">NYT ALBUM</button>
+        </div>
+
+        <div id="tilbudknap">
+            <button class="button tilbudknap">INDHENT TILBUD</button>
+        </div>
+
+        <section id="tidslinje">
+            <div> <img src="image/tidslinje.png" alt="Tidslinje for indhent tilbud proces"></div>
+        </section>
+
+        <!----messenger knap-->
+
+        <button class="open-button" onclick="openForm()">CHAT</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h3>CHAT MED MINO DESIGN</h3>
+
+    <label for="msg"><b>Send os en besked her:</b></label>
+    <textarea placeholder="Skriv besked..." name="msg" required></textarea>
+
+    <button type="submit" class="btn">SEND</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">LUK</button>
+  </form>
+</div>
+
+<script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+
+</main>
+</body>
+
+</html>
